@@ -5,9 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Systemd service file generator | MySystemd</title>
-    <meta name="description" content=">A simple Systemd service file online generator. This powerful and intuitive user interface
-            makes us more efficient when we are creating new services file with all possible settings.">
-    <meta name="keywords" content="systemd service file generator, systemd generator, linux service files">
+    <meta name="description" content=">一个简单的 Systemd 服务文件在线生成器。这个强大而直观的用户界面使我们在创建带有所有可能设置的新服务文件时更加高效。">
+    <meta name="keywords" content="systemd服务文件生成器，systemd生成器，Linux服务文件。">
 
     <!-- Angular Material style sheet -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
@@ -66,13 +65,10 @@
 
 <div layout="row" layout-xs="column" layout-wrap layout-padding>
     <div flex="">
-        <h1 class="md-display-3" style="text-align: center;">My Systemd Generator</h1>
-        <p class="md-body-2">A simple Systemd service file online generator. This powerful and
-            intuitive user
-            interface makes us more efficient when we are creating new services file with all possible settings. You can
-            click on plus button to add
-            more options under correspondent section. I hope that this tool makes your life more easier,
-            enjoy!
+        <h1 class="md-display-3" style="text-align: center;">Systemd 配置生成器</h1>
+        <p class="md-body-2">这是一款简单的Systemd服务文件在线生成器。它具有强大且直观的用户界面，
+            使我们在创建带有所有可能设置的新服务文件时更加高效。您可以单击加号按钮，在相应的部分下添加更多选项。
+            我希望这个工具能让您的生活更加轻松愉快，祝您使用愉快！
         </p>
         <p style="text-align: center;">
             Find the code <a href="https://github.com/NunuM/my-systemd-service-file-generator">GitHub</a>
@@ -80,17 +76,17 @@
     </div>
     <div flex="" style="width: 100%;">
         <pre style="overflow: auto;"><code class="language-bash">
-#How to install
-sudo cp -v mysystemdservice.service /etc/systemd/system #copy service file
-sudo systemctl enable mysystemdservice.service          #enable service
-sudo systemctl start mysystemdservice.service           #start service
-sudo systemctl status mysystemdservice.service          #check if the service started
-sudo journalctl -f -u mysystemdservice.service          #inspect the logs
+#怎样安装服务
+sudo cp -v mysystemdservice.service /etc/systemd/system #复制 service file
+sudo systemctl enable mysystemdservice.service          #启用 service
+sudo systemctl start mysystemdservice.service           #开启 service
+sudo systemctl status mysystemdservice.service          #检查服务运行状态
+sudo journalctl -f -u mysystemdservice.service          #查看服务日志
 
-#How to Remove
-sudo systemctl stop mysystemdservice.service
-sudo systemctl disable mysystemdservice.service
-sudo systemctl daemon-reload
+#怎样删除服务
+sudo systemctl stop mysystemdservice.service            #停止服务
+sudo systemctl disable mysystemdservice.service         #禁用服务/禁止启动
+sudo systemctl daemon-reload                            #重新加载
         </code></pre>
     </div>
 </div>
@@ -153,7 +149,7 @@ sudo systemctl daemon-reload
     </div>
     <div flex="" layout-padding>
         <md-toolbar class="md-toolbar-tools">
-            <h3>Systemd service file preview</h3>
+            <h3>配置文件预览</h3>
 
             <span class="flex"></span>
 
@@ -169,8 +165,7 @@ sudo systemctl daemon-reload
 </div>
 
 <footer>
-    <p>Made with ❤️ by <a href="https://github.com/NunuM" rel="author" target="__blank">NunuM</a> | Powered by <a
-            href="https://talos.sh">Talos</a></p>
+    <p>Made with ❤️ by <a href="https://github.com/NunuM" rel="author" target="__blank">NunuM</a></p>
 </footer>
 
 
